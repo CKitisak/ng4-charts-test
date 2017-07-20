@@ -1,0 +1,14 @@
+nav a {
+  color: red;
+  padding: 10px;
+  border: 1px solid red;
+  text-decoration: none;
+}
+nav a + a {
+  margin-left: 10px;
+}
+
+nav a:hover {
+  color: white;
+  background: red;
+}

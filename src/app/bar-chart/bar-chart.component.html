@@ -1,0 +1,64 @@
+<h4>
+  Vertical Bar Chart!
+</h4>
+<div style="width: 700px; height: 400px;">
+  <ngx-charts-bar-vertical
+    [view]=view
+    [scheme]="colorScheme"
+    [results]="singleData"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    (select)="onSelect($event)"
+  ></ngx-charts-bar-vertical>
+</div>
+
+<br />
+
+<h4>
+  Horizontal Bar Chart!
+</h4>
+<div style="width: 700px; height: 400px;">
+  <ngx-charts-bar-horizontal
+    [view]=view
+    [scheme]="colorScheme"
+    [results]="singleData"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    (select)="onSelect($event)"
+  ></ngx-charts-bar-horizontal>
+</div>
+
+<br />
+
+<h4>
+  Grouped Horizontal Bar Chart!
+</h4>
+
+<div style="width: 700px; height: 400px;">
+  <ngx-charts-bar-horizontal-2d
+    [view]=view
+    [scheme]="colorScheme"
+    [results]="multiData"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    (select)="onSelect($event)"
+  ></ngx-charts-bar-horizontal-2d>
+</div>

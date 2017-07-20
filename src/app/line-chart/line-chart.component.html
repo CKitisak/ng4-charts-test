@@ -1,0 +1,43 @@
+<h2>
+  Line Chart!
+</h2>
+
+<div style="width: 700px; height: 400px;">
+  <ngx-charts-line-chart
+    [view]=view
+    [scheme]="colorScheme"
+    [results]="multiData"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    [autoScale]="autoScale"
+    (select)="onSelect($event)"
+  ></ngx-charts-line-chart>
+</div>
+
+<h2>
+  Area Chart!
+</h2>
+
+<div style="width: 700px; height: 400px;">
+  <ngx-charts-area-chart
+    [view]="view"
+    [scheme]="colorScheme"
+    [results]="multiData"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    [autoScale]="autoScale"
+    (select)="onSelect($event)">
+  </ngx-charts-area-chart>
+</div>
