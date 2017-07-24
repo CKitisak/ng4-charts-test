@@ -10,9 +10,21 @@ import { jqxSortableComponent } from 'jqwidgets-framework/jqwidgets-ts/angular_j
 import { jqxSliderComponent } from 'jqwidgets-framework/jqwidgets-ts/angular_jqxslider';
 import { jqxCheckBoxComponent } from 'jqwidgets-framework/jqwidgets-ts/angular_jqxcheckbox';
 import { jqxButtonComponent } from 'jqwidgets-framework/jqwidgets-ts/angular_jqxbuttons';
+import { jqxChartComponent } from 'jqwidgets-framework/jqwidgets-ts/angular_jqxchart';
+
+import { jqxGridComponent } from 'jqwidgets-framework/jqwidgets-ts/angular_jqxgrid';
+
+
+// import { jqxScrollBarComponent} from 'jqwidgets-framework/jqwidgets-ts/angular_jqxscrollbar';
+// import { jqxMenuComponent } from 'jqwidgets-framework/jqwidgets-ts/angular_jqxmenu';
+// import { jqxListBoxComponent } from 'jqwidgets-framework/jqwidgets-ts/angular_jqxlistbox';
+// import { jqxDropDownListComponent } from 'jqwidgets-framework/jqwidgets-ts/angular_jqxdropdownlist';
+// import { jqxGridComponent } from 'jqwidgets-framework/jqwidgets-ts/angular_jqxgrid';
+
 
 import { AppComponent } from './app.component';
 import { RbgSliderComponent } from './rbg-slider/rbg-slider.component';
+
 
 
 @NgModule({
@@ -23,7 +35,14 @@ import { RbgSliderComponent } from './rbg-slider/rbg-slider.component';
     jqxSliderComponent,
     jqxCheckBoxComponent,
     jqxButtonComponent,
-    RbgSliderComponent
+    jqxChartComponent,
+    // jqxScrollBarComponent,
+    // jqxMenuComponent,
+    // jqxListBoxComponent,
+    // jqxDropDownListComponent,
+    // jqxGridComponent,
+    RbgSliderComponent,
+
   ],
   imports: [
     BrowserModule,

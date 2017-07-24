@@ -23,13 +23,8 @@
         "../node_modules/jqwidgets-framework/jqwidgets/styles/jqx.base.css"
       ],
       "scripts": [
-        "../node_modules/jqwidgets-framework/jqwidgets/jqxcore.js",
-        "../node_modules/jqwidgets-framework/jqwidgets/jqxdraw.js",
-        "../node_modules/jqwidgets-framework/jqwidgets/jqxbargauge.js",
-        "../node_modules/jqwidgets-framework/jqwidgets/jqxsortable.js",
-        "../node_modules/jqwidgets-framework/jqwidgets/jqxslider.js",
-        "../node_modules/jqwidgets-framework/jqwidgets/jqxcheckbox.js",
-        "../node_modules/jqwidgets-framework/jqwidgets/jqxbuttons.js"
+        "../node_modules/jquery/dist/jquery.js",
+        "../node_modules/jqwidgets-framework/jqwidgets/jqx-all.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

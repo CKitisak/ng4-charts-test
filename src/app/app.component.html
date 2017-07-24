@@ -1,45 +1,27 @@
 <h1>{{ title }}</h1>
-<hr>
-<!-- <jqxSortable>
-  <jqxBarGauge
-    [width]="300" [height]="300" [colorScheme]="'scheme02'"
-    [max]="150" [values]="values">
-  </jqxBarGauge>
-  <jqxBarGauge
-    [width]="300" [height]="300" [colorScheme]="'scheme04'"
-    [max]="150" [values]="values">
-  </jqxBarGauge>
-</jqxSortable> -->
+<div class="container">
+  <jqxSortable #sortableGrid [grid]='[ 50, 50 ]'>
+    <div class="widget">
+      <jqxBarGauge
+        [width]="300" [height]="300" [colorScheme]="'scheme01'"
+        [max]="150" [values]="values">
+      </jqxBarGauge>
+    </div>
+    <div class="widget">
+      <jqxChart #myChart
+              [width]="300" [height]="300" [source]="sampleData" [title]="'My Title'" [description]="'myDescription'" [padding]="padding"
+              [titlePadding]="titlePadding" [xAxis]="xAxis" [valueAxis]="valueAxis" [seriesGroups]="seriesGroups">
+          </jqxChart>
+    </div>
+    <div class="widget">
+      <h4>
+        some widget button
+      </h4>
 
-<h1>grid</h1>
-<jqxSortable #sortableGrid [grid]='[ 50, 50 ]'>
-  <div>
-    <jqxBarGauge
-      [width]="300" [height]="300" [colorScheme]="'scheme01'"
-      [max]="150" [values]="values">
-    </jqxBarGauge>
-  </div>
-  <div>
-    <jqxBarGauge
-      [width]="300" [height]="300" [colorScheme]="'scheme02'"
-      [max]="150" [values]="values">
-    </jqxBarGauge>
-  </div>
-  <div>
-    <h4>
-      some widget button
-    </h4>
-    <div class="btn-wrapper">
       <jqxButton #buttonReference [width]="80" [height]="80" [textPosition]="left">Button</jqxButton>
     </div>
-  </div>
-  <div>
-    <jqxBarGauge
-      [width]="300" [height]="300" [colorScheme]="'scheme04'"
-      [max]="150" [values]="values">
-    </jqxBarGauge>
-  </div>
-  <div>
-    <app-rbg-slider></app-rbg-slider>
-  </div>
-</jqxSortable>
+    <div class="widget">
+      <app-rbg-slider></app-rbg-slider>
+    </div>
+  </jqxSortable>
+</div>
